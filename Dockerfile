@@ -15,6 +15,6 @@ From openjdk:8-jre-alpine
 
 COPY --from=builder target/springboot-Strart-0.0.1-SNAPSHOT.jar springboot-Strart-0.0.1-SNAPSHOT.jar
 
-
+EXPOSE 9090
 
 CMD ["java", "-jar", "springboot-Strart-0.0.1-SNAPSHOT.jar"]
